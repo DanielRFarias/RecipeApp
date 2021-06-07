@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="164dp">
+
+        <ImageView
+            android:id="@+id/recipe_view"
+            android:layout_width="203dp"
+            android:layout_height="187dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_baseline"
+            tools:layout_editor_absoluteX="-6dp"
+            android:contentDescription="@string/image_of_a_recipe" />
+
+        <TextView
+            android:id="@+id/name_recipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/recipe_view"
+            android:maxLines="1"
+            android:text="@string/nome_da_receita"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/button_favor"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/name_recipe"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@id/recipe_view"
+            android:background="@drawable/ic_baseline_blank"
+            android:clickable="true"
+            android:contentDescription="@string/favourites"
+            android:enabled="true"
+            android:focusable="true"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
